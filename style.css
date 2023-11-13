@@ -1,0 +1,378 @@
+:root {
+  --color: #2d25a0;
+  --color1: #e02c6d;
+  --icon: rgb(22, 157, 211);
+}
+html {
+  scroll-behavior: smooth;
+}
+* {
+  margin: 0;
+  padding: 0;
+  font-family: "Poppins", sans-serif;
+}
+/* header start */
+header {
+  width: 100%;
+  height: 677px;
+  background-color: var(--color);
+}
+nav {
+  width: 1160px;
+  height: 44px;
+  position: relative;
+  top: 42px;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+.nav-bar {
+  display: flex;
+  justify-content: space-around;
+  width: 547px;
+  height: 24px;
+}
+.nav-bar li {
+  list-style-type: none;
+}
+.nav-bar li a {
+  font-weight: 500px;
+  font-size: 18px;
+  list-style-type: none;
+  color: white;
+  text-decoration: none;
+  transition: 0.5s;
+}
+.nav-bar li a:hover {
+  color: rgb(255, 136, 136);
+}
+.btn {
+  background-color: var(--color1);
+  padding: 10px 24px;
+  border-radius: 4%;
+  color: white;
+  font-size: 18px;
+  transition: 0.5s;
+  text-decoration: none;
+}
+.btn:hover {
+  background-color: rgb(255, 58, 58);
+}
+.heading-body {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+.header-content {
+  width: 485px;
+  margin-top: 20%;
+  font-size: 27px;
+  font-weight: 700;
+  color: white;
+  margin-bottom: 10px;
+}
+.header-img img {
+  width: 556px;
+  height: 438px;
+  margin-top: 20%;
+  margin-right: 2%;
+  width: 33.36rem;
+  height: 26.28rem;
+  transition: 0.5s;
+}
+.header-img img:hover {
+  transform: scale(1.05);
+}
+/* header end */
+/* start player */
+.player {
+  width: 63rem;
+  position: absolute;
+  left: 140px;
+  top: 747px;
+}
+.grid-container {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  row-gap: 27px;
+  column-gap: 27px;
+}
+.grid-box {
+  width: 19.8rem;
+  height: 28.44rem;
+  background: #ffffff;
+  box-shadow: 0px 0px 40px rgba(0, 0, 0, 0.15);
+  padding: 15px;
+  border-radius: 2%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  transition: 1s;
+}
+.grid-box:hover {
+  transform: scale(1.05);
+}
+.img-player img {
+  width: 300px;
+  height: 256px;
+  border-radius: 3%;
+}
+/* Player end */
+/* highlight start */
+
+.high-light {
+  position: absolute;
+  width: 1102px;
+  height: 427px;
+  left: 182px;
+  top: 2889px;
+}
+.flex-highlight {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+.highlight {
+  font-size: 48px;
+  font-weight: 700;
+  color: rgb(51, 49, 49);
+}
+.left-highlight {
+  width: 469px;
+  height: 309px;
+}
+.highlight-details {
+  margin-bottom: 24px;
+}
+.right-highlight img {
+  width: 567px;
+  height: 427px;
+  transition: 1s;
+}
+.right-highlight img:hover {
+  transform: scale(1.05);
+}
+
+/* highlight end */
+
+/* club start */
+.club {
+  position: absolute;
+  left: 120px;
+  top: 4300px;
+  transition: 0.2s;
+  width: 1160px;
+}
+.heading1 {
+  margin-left: 45%;
+  margin-bottom: 5%;
+  font-size: 40px;
+}
+.box-container {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  column-gap: 4%;
+  row-gap: 10%;
+}
+.box-container {
+  height: 200px;
+}
+.box {
+  box-shadow: 1px 3px 10px rgb(221, 221, 221);
+  padding: 10%;
+  border-radius: 5%;
+  margin-bottom: 4%;
+  transition: 0.5s;
+}
+.box:hover {
+  transform: scale(1.05);
+}
+.club-details {
+  margin-bottom: 5%;
+}
+.box img {
+  width: 100%;
+}
+
+a {
+  text-decoration: none;
+  color: white;
+  font-weight: 400;
+  font-size: 15px;
+}
+/* club end */
+/* tournaments start */
+
+.tournament {
+  position: absolute;
+  left: 120px;
+  top: 6050px;
+  transition: 0.2s;
+  width: 1160px;
+}
+.tournament h1 {
+  color: #187c96;
+}
+/* tournaments end */
+/* footer start */
+footer {
+  position: absolute;
+  left: 482px;
+  top: 7250px;
+}
+.logo img {
+  width: 483.87px;
+  height: 110px;
+  transition: 0.2s;
+}
+.logo img:hover {
+  transform: scale(1.05);
+}
+footer {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.icons {
+  display: flex;
+  width: 270px;
+  justify-content: space-around;
+}
+.fa-facebook {
+  color: var(--icon);
+  transition: 0.2s;
+}
+
+.fa-facebook-messenger {
+  color: var(--icon);
+}
+.fa-twitter {
+  color: var(--icon);
+}
+.fa-linkedin {
+  color: var(--icon);
+}
+.fa-facebook:hover,
+.fa-facebook-messenger:hover,
+.fa-twitter:hover,
+.fa-linkedin:hover {
+  color: rgb(13, 124, 168);
+  transform: scale(1.05);
+}
+.copyright {
+  margin-top: 2%;
+  padding: 2%;
+}
+.copy {
+  color: rgb(53, 49, 49);
+}
+/* footer end */
+
+/* responsive design start */
+@media only screen and (max-width: 500px) {
+  /* heading start */
+
+  header {
+    width: 480px;
+  }
+  nav {
+    width: 442px;
+  }
+  .login {
+    margin: 0 auto;
+  }
+  .nav-bar {
+    display: none;
+  }
+  .left-content {
+    margin-left: 35px;
+  }
+  .header-content h1 {
+    font-size: 37px;
+  }
+  .heading-body {
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 2%;
+  }
+
+  .header-img img {
+    width: 329px;
+    height: 259.17px;
+    margin-right: 20%;
+  }
+  /* heading end  */
+  /* player start */
+  .player {
+    position: absolute;
+    width: 330px;
+    height: 474px;
+    left: 15px;
+    top: 742px;
+  }
+  .grid-container {
+    grid-template-columns: 1fr;
+  }
+  /* player end  */
+  /* club start */
+  .club {
+    position: absolute;
+    width: 329px;
+    left: 15px;
+    top: 6900px;
+  }
+  .box-container {
+    grid-template-columns: 1fr;
+  }
+  /* club end  */
+
+  /* high light start  */
+  .high-light {
+    position: absolute;
+    left: 15px;
+    width: 329px;
+    height: 299px;
+    top: 11350px;
+  }
+  .flex-highlight {
+    flex-direction: column;
+  }
+  .left-highlight {
+    width: 329px;
+    height: 299px;
+  }
+  .left-highlight h1 {
+    font-size: 25px;
+  }
+  .right-highlight img {
+    width: 328px;
+    height: 248px;
+  }
+  .heading1 {
+    font-size: 32px;
+  }
+  /* highlight end  */
+  /* tonament start  */
+  .tournament {
+    position: absolute;
+    width: 329px;
+    left: 15px;
+    top: 13050px;
+  }
+  /* tunament end  */
+  /* footer start  */
+  footer {
+    position: absolute;
+    width: 329px;
+    left: 15px;
+    top: 16100px;
+  }
+  .logo img {
+    width: 271px;
+    height: 63px;
+  }
+  /* footer end  */
+}
+
+/* responsive design end */
